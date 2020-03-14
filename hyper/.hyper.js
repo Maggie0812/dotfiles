@@ -144,7 +144,8 @@ module.exports = {
   plugins: [
     "hyperterm-gruvbox-dark",
     "hyperpower",
-    "hyperterm-overlay"
+    "hyperterm-overlay",
+    "hyper-search"
   ],
 
   // in development, you can create a directory under
