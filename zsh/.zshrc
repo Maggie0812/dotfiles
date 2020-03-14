@@ -1,10 +1,6 @@
-# initialize autocomplete here, otherwise functions won't be loaded
-# echo $(dirname $0)
-DOTFILES=$HOME/.dotfiles
+# Environment
+export DOTFILES=$HOME/.dotfiles
+export ZSH=$DOTFILES/zsh/ohmyzsh
 
-# load config files
-config_files=($DOTFILES/zsh/**/*.zsh)
-for file in ${config_files}
-do
-  source $file
-done
+source $DOTFILES/zsh/aliases.zsh
+source $DOTFILES/zsh/config.zsh

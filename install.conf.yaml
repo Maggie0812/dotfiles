@@ -3,9 +3,11 @@
       relink: true
       create: true
 
+- clean: ['~']
+
 - link:
     ~/.dotfiles: ''
-    ~/.zprezto: zsh/prezto
+    ~/.oh-my-zsh: zsh/ohmyzsh
     ~/.zshrc: zsh/.zshrc
 
 - create:
