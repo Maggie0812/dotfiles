@@ -1,3 +1,13 @@
+- defaults:
+    link:
+      relink: true
+      create: true
+
+- link:
+    ~/.dotfiles: ''
+    ~/.zprezto: zsh/prezto
+    ~/.zshrc: zsh/.zshrc
+
 - create:
   - ~/Inbox
   - ~/Downloads
@@ -9,6 +19,7 @@
   - 
     command: git submodule update --init --recursive
     stdout: true
+    stderr: true
     description: "Installing submodules"
   -
     command: ./before_installation.sh
@@ -18,5 +29,5 @@
   -
     command: brew bundle
     stdout: true
+    stderr: true
     description: "Installing Apps"
-
