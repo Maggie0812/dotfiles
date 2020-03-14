@@ -27,6 +27,15 @@
             "appdir": "~/Applications"
           }
         }
+      },
+      "hyper": {
+        "version": "3.0.2",
+        "options": {
+          "full_name": "hyper",
+          "args": {
+            "appdir": "~/Applications"
+          }
+        }
       }
     },
     "brew": {

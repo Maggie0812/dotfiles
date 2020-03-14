@@ -10,6 +10,7 @@
     ~/.oh-my-zsh: zsh/ohmyzsh
     ~/.zshrc: zsh/.zshrc
     ~/.zsh/pure: zsh/pure
+    ~/.hyper.js: hyper/.hyper.js
 
 - create:
   - ~/Inbox
@@ -31,6 +32,7 @@
     description: "Installing Prerequisite"
   -
     command: brew bundle
+    stdin: true
     stdout: true
     stderr: true
     description: "Installing Apps"
