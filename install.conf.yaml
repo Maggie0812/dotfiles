@@ -9,6 +9,7 @@
     ~/.dotfiles: ''
     ~/.oh-my-zsh: zsh/ohmyzsh
     ~/.zshrc: zsh/.zshrc
+    ~/.zsh/pure: zsh/pure
 
 - create:
   - ~/Inbox
