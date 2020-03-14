@@ -1,0 +1,20 @@
+- defaults:
+  link:
+    relink: true
+    create: true
+
+- clean: ['~']
+- link:
+  ~/.dotfiles: ''
+
+- create:
+  - ~/Inbox
+  - ~/Downloads
+  - ~/Documents
+  - ~/Projects
+  - ~/Notes
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+  - [sh ./before_installation.sh, Installing Prerequisites]
+  - [brew bundle, Install Brew Apps]
