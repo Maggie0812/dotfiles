@@ -1,9 +1,10 @@
 # Set default shell to ZSH
-if [[ $SHELL != $(which zsh) ]]; then
-    echo "Setting default shell to ZSH"
-    chsh -s $(which zsh)
-    zsh
-fi
+# Comment out first for Hyper 
+# if [[ $SHELL != $(which zsh) ]]; then
+#     echo "Setting default shell to ZSH"
+#     chsh -s $(which zsh)
+#     zsh
+# fi
 
 # Install homebrew
 which -s brew

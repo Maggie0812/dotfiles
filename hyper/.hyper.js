@@ -119,7 +119,7 @@ module.exports = {
     // Overlay plugin
     overlay: {
       alwaysOnTop: true,
-      animate: true,
+      animate: false, // buggy
       hasShadow: false,
       hideDock: false,
       hideOnBlur: false,
