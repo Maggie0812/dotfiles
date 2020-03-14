@@ -145,6 +145,7 @@ module.exports = {
     "hyperterm-gruvbox-dark",
     "hyperpower",
     "hyperterm-overlay",
+    "hyperlinks",
     "hyper-search"
   ],
 
