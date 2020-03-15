@@ -13,7 +13,7 @@ source $ZSH/oh-my-zsh.sh
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # p10k settings
-[[ ! -f ~/.p10k.zsh ]] || source $DOTFILES/zsh/.p10k.zsh
+[[ ! -f $DOTFILES/zsh/.p10k.zsh ]] || source $DOTFILES/zsh/.p10k.zsh
 
 # FZF
-[ -f ~/.fzf.zsh ] && source $DOTFILES/zsh/.fzf.zsh
+[ -f $DOTFILES/zsh/.fzf.zsh ] && source $DOTFILES/zsh/.fzf.zsh
