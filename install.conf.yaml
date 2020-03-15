@@ -13,7 +13,6 @@
 - clean: ['~']
 
 - link:
-    ~/.dotfiles: ''
     ~/.zshrc: zsh/.zshrc
     ~/.hyper.js: hyper/.hyper.js
     ~/.gitconfig: git/.gitconfig
