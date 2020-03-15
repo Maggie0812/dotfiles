@@ -6,10 +6,6 @@
 	path = zsh/ohmyzsh
 	url = https://github.com/ohmyzsh/ohmyzsh
 	ignore = dirty
-[submodule "zsh/pure"]
-	path = zsh/pure
-	url = https://github.com/sindresorhus/pure.git
-	ignore = dirty
 [submodule "zsh/powerlevel10k"]
 	path = zsh/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k
