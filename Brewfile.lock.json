@@ -54,6 +54,15 @@
             "appdir": "~/Applications"
           }
         }
+      },
+      "slack": {
+        "version": "4.3.3",
+        "options": {
+          "full_name": "slack",
+          "args": {
+            "appdir": "~/Applications"
+          }
+        }
       }
     },
     "brew": {
@@ -136,7 +145,7 @@
       "mojave": {
         "HOMEBREW_VERSION": "2.2.10",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "9e36e86ea5f9e2d385632ffaf436865a0c313c8f",
+        "Homebrew/homebrew-core": "7f57a7247bbfcc80dc5837ee3a50431326dd7bd2",
         "CLT": "10.3.0.0.1.1562985497",
         "Xcode": "10.2.1",
         "macOS": "10.14.6"
