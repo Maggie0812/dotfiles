@@ -95,6 +95,7 @@ defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 # the Dock to launch apps.
 defaults write com.apple.dock show-recents -bool no
 defaults write com.apple.dock recent-apps -array # intentionally empty
+defaults write com.apple.dock persistent-apps -array
 
 # When performing a search, search the current folder by default
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
