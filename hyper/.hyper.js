@@ -146,6 +146,7 @@ module.exports = {
     "hyperpower",
     "hyperterm-overlay",
     "hyperlinks",
+    "hypercwd",
     "hyper-search"
   ],
 
