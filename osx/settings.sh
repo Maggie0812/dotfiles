@@ -105,8 +105,6 @@ defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
 # Clock: 24 hours format
 defaults write com.apple.menuextra.clock "DateFormat" "EEE MMM d HH:mm:ss"
-defaults write com.apple.menuextra.clock "FlashDateSeparators" "0"
-defaults read com.apple.menuextra.clock
 
 # Battery
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
@@ -127,3 +125,5 @@ defaults write com.apple.menuextra.battery ShowTime -string "YES"
 for app in "Address Book" "Calendar" "Contacts" "Dock" "Finder" "Mail" "Safari" "SystemUIServer" "iCal"; do
   killall "${app}" &> /dev/null
 done
+
+exit 0

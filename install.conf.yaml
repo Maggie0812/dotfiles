@@ -32,3 +32,8 @@
 
 - link:
     zsh/ohmyzsh/custom/themes/powerlevel10k: zsh/powerlevel10k
+
+- shell:
+  - [open ~/Applications/Rectangle.app, "Open Rectangle for authorization"]
+  - [osx/settings.sh, "Setup OSX defaults"]
+
