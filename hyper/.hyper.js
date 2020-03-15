@@ -91,7 +91,7 @@ module.exports = {
     env: {},
 
     // set to `false` for no bell
-    bell: 'SOUND',
+    bell: 'false',
 
     // if `true` (without backticks and without quotes), selected text will automatically be copied to the clipboard
     copyOnSelect: false,
@@ -116,6 +116,7 @@ module.exports = {
     webGLRenderer: true,
 
     // for advanced config flags please refer to https://hyper.is/#cfg
+    // ----------------------- Plugins ---------------------
     // Overlay plugin
     overlay: {
       alwaysOnTop: true,
@@ -132,6 +133,10 @@ module.exports = {
       size: 0.4,
       tray: true,
       unique: true
+    },
+    gruvboxTheme: {
+      style: 'dark', // or 'light'
+      contrast: 'hard' // or 'soft', 'hard'
     }
   },
 
@@ -142,7 +147,7 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-    "hyperterm-gruvbox-dark",
+    'hyperterm-gruvbox',
     "hyperpower",
     "hyperterm-overlay",
     "hyperlinks",
