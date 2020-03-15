@@ -16,4 +16,4 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source $DOTFILES/zsh/.p10k.zsh
 
 # FZF
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ~/.fzf.zsh ] && source $DOTFILES/zsh/.fzf.zsh
