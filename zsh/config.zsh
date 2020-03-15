@@ -1,4 +1,3 @@
-
 plugins=(git extract brew autojump)
 
 # Set name of the theme to load --- if set to "random", it will
@@ -7,13 +6,11 @@ plugins=(git extract brew autojump)
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-source $ZSH/oh-my-zsh.sh
-
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+# ohmyzsh settings
+[ -f $ZDOTDIR/ohmyzsh/oh-my-zsh.sh ] && source $ZDOTDIR/ohmyzsh/oh-my-zsh.sh
 
 # p10k settings
-[[ ! -f $DOTFILES/zsh/.p10k.zsh ]] || source $DOTFILES/zsh/.p10k.zsh
+[ -f $ZDOTDIR/.p10k.zsh ] && source $ZDOTDIR/.p10k.zsh
 
 # FZF
-[ -f $DOTFILES/zsh/.fzf.zsh ] && source $DOTFILES/zsh/.fzf.zsh
+[ -f $ZDOTDIR/.fzf.zsh ] && source $ZDOTDIR/.fzf.zsh

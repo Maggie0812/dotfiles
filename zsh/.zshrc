@@ -6,5 +6,5 @@ export ZDOTDIR=$DOTFILES/zsh
 # Paths
 export PATH=~/bin:$PATH
 
-source $DOTFILES/zsh/aliases.zsh
-source $DOTFILES/zsh/config.zsh
+source $ZDOTDIR/aliases.zsh
+source $ZDOTDIR/config.zsh
