@@ -8,13 +8,18 @@ cd dotfiles
 ./install
 ```
 
+### Shared Env
+```
+export DOTFILES=$HOME/.dotfiles
+export ZDOTDIR=$DOTFILES/zsh
+```
+
 ### Mac OSX settings
 ```
 ./osx/settings
 ```
 
-### Shared Env
+### Brew install
 ```
-export DOTFILES=$HOME/.dotfiles
-export ZDOTDIR=$DOTFILES/zsh
+brew bundle
 ```

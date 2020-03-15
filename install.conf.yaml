@@ -7,6 +7,9 @@
       stdout: true
       stderr: true
 
+- shell:
+  - [git submodule update --init --recursive, "Installing submodules"]
+
 - clean: ['~']
 
 - link:
@@ -24,15 +27,8 @@
   - ~/Notes
 
 - shell:
-  -
-    command: git submodule update --init --recursive
-    description: "Installing submodules"
-  -
-    command: ./before_installation.sh
-    description: "Installing Prerequisite"
-  -
-    command: brew bundle
-    description: "Installing Apps"
+  - [./before_installation.sh, "Installing Prerequisite"]
+  - [brew bundle, "Installing Apps"]
 
 - link:
     zsh/ohmyzsh/custom/themes/powerlevel10k: zsh/powerlevel10k
