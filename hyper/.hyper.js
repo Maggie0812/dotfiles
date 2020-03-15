@@ -152,6 +152,7 @@ module.exports = {
     "hyperterm-overlay",
     "hyperlinks",
     "hypercwd",
+    "hyper-tab-icons-plus",
     "hyper-search"
   ],
 
