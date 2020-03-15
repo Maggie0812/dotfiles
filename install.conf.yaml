@@ -18,6 +18,8 @@
     ~/.hyper.js: hyper/.hyper.js
     ~/.gitconfig: git/.gitconfig
     ~/.gitignore: git/.gitignore
+    ~/.vim: .vim
+    ~/.vimrc: .vim/.vimrc
 
 - create:
   - ~/Inbox
