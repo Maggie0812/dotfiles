@@ -124,7 +124,7 @@ module.exports = {
       hasShadow: false,
       hideDock: false,
       hideOnBlur: false,
-      hotkeys: ['Option+Space'],
+      hotkeys: ['Cmd+`'],
       position: 'bottom',
       primaryDisplay: true,
       resizable: true,
