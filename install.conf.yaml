@@ -2,6 +2,10 @@
     link:
       relink: true
       create: true
+    shell:
+      stdin: true
+      stdout: true
+      stderr: true
 
 - clean: ['~']
 
@@ -23,17 +27,10 @@
 - shell:
   - 
     command: git submodule update --init --recursive
-    stdout: true
-    stderr: true
     description: "Installing submodules"
   -
     command: ./before_installation.sh
-    stdout: true
-    stderr: true
     description: "Installing Prerequisite"
   -
     command: brew bundle
-    stdin: true
-    stdout: true
-    stderr: true
     description: "Installing Apps"
