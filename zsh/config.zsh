@@ -16,3 +16,6 @@ source $ZSH/oh-my-zsh.sh
 fpath+=$HOME/.zsh/pure
 autoload -U promptinit; promptinit
 prompt pure
+
+# FZF
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
