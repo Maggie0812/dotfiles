@@ -11,7 +11,6 @@
 
 - link:
     ~/.dotfiles: ''
-    zsh/ohmyzsh/custom/themes/powerlevel10k: zsh/powerlevel10k
     ~/.zshrc: zsh/.zshrc
     ~/.hyper.js: hyper/.hyper.js
     ~/.gitconfig: git/.gitconfig
@@ -34,3 +33,6 @@
   -
     command: brew bundle
     description: "Installing Apps"
+
+- link:
+    zsh/ohmyzsh/custom/themes/powerlevel10k: zsh/powerlevel10k
