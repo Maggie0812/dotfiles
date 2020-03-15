@@ -31,6 +31,7 @@
 
 - link:
     zsh/ohmyzsh/custom/themes/powerlevel10k: zsh/powerlevel10k
+    ~/.vscode: .vscode
 
 - shell:
   - [open ~/Applications/Rectangle.app, "Open Rectangle for authorization"]
