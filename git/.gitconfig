@@ -75,3 +75,6 @@
 [core]
 	excludesfile = ~/.gitignore
 	editor = vim
+[user]
+	name = Corey Feng
+	email = corey@xfers.com
