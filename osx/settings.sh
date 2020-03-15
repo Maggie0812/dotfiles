@@ -7,11 +7,12 @@
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
 osascript -e 'tell application "System Preferences" to quit'
+killall cfprefsd
 
-# Ask for the administrator password upfront
+echo " Ask for the administrator password for the duration of this script"
 sudo -v
 
-# Keep-alive: update existing `sudo` time stamp until `settings.sh` has finished
+echo " Keep-alive: update existing sudo time stamp until script has finished"
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 ###############################################################################
@@ -39,9 +40,6 @@ defaults write com.apple.dock autohide -bool true
 # Options: "left," "right", "bottom"
 defaults write com.apple.Dock orientation -string left
 
-# Restart to make the changes effect
-killall Dock
-
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
 ###############################################################################
@@ -56,18 +54,21 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCorner
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
 defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClickBehavior -int 1
 defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
+defaults write com.apple.AppleMultitouchTrackpad TrackpadCornerSecondaryClick -int 2
+defaults write com.apple.AppleMultitouchTrackpad TrackpadRightClick -bool true
 
 # Trackpad: Enable three-finger dragging
-defaults -currentHost write NSGlobalDomain com.apple.trackpad.threeFingerSwipeGesture -int 1
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true
 
 # Increase sound quality for Bluetooth headphones/headsets
 defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
 
 # Keyboard: key repeat faster
-# 120, 90, 60, 30, 12, 6, 2
-defaults write -g InitialKeyRepeat -int 6
-# 120, 94, 68, 35, 25, 15
-defaults write NSGlobalDomain KeyRepeat -int 15
+defaults write -g AppleKeyboardUIMode -int 3
+defaults write -g ApplePressAndHoldEnabled -bool false
+defaults write -g InitialKeyRepeat -int 20
+defaults write -g KeyRepeat -int 1
 
 ###############################################################################
 # Finder                                                                      #
@@ -92,7 +93,29 @@ defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 # Wipe all (default) app icons from the Dock
 # This is only really useful when setting up a new Mac, or if you don’t use
 # the Dock to launch apps.
-defaults write com.apple.dock persistent-apps -array
+defaults write com.apple.dock show-recents -bool no
+defaults write com.apple.dock recent-apps -array # intentionally empty
 
 # When performing a search, search the current folder by default
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+
+###############################################################################
+# Menu bar                                                                    #
+###############################################################################
+
+# Clock: 24 hours format
+defaults write com.apple.menuextra.clock "DateFormat" "EEE MMM d HH:mm:ss"
+defaults write com.apple.menuextra.clock "FlashDateSeparators" "0"
+defaults read com.apple.menuextra.clock
+
+# Battery
+defaults write com.apple.menuextra.battery ShowPercent -string "YES"
+defaults write com.apple.menuextra.battery ShowTime -string "YES"
+
+###############################################################################
+# Kill affected applications                                                  #
+###############################################################################
+
+for app in "Address Book" "Calendar" "Contacts" "Dock" "Finder" "Mail" "Safari" "SystemUIServer" "iCal"; do
+  killall "${app}" &> /dev/null
+done
