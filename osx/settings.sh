@@ -112,6 +112,13 @@ defaults read com.apple.menuextra.clock
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 defaults write com.apple.menuextra.battery ShowTime -string "YES"
 
+
+###############################################################################
+# Rectangle                                                                   #
+###############################################################################
+
+
+
 ###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################

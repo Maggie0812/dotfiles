@@ -2,6 +2,7 @@ cask_args appdir: '~/Applications'
 cask 'google-chrome'
 cask 'hyper'
 cask 'visual-studio-code'
+cask 'rectangle'
 
 # Fonts
 tap 'homebrew/cask-fonts'

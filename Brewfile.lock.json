@@ -45,6 +45,15 @@
             "appdir": "~/Applications"
           }
         }
+      },
+      "rectangle": {
+        "version": "0.22",
+        "options": {
+          "full_name": "rectangle",
+          "args": {
+            "appdir": "~/Applications"
+          }
+        }
       }
     },
     "brew": {
