@@ -13,11 +13,6 @@ Thumbs.db
 # vim swap files
 *.swp
 
-.env
-
-# VSCode Workspace settings
-.vscode
-
 # My Notes
 _corey_*
 
