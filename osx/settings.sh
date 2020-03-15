@@ -64,8 +64,10 @@ defaults -currentHost write NSGlobalDomain com.apple.trackpad.threeFingerSwipeGe
 defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
 
 # Keyboard: key repeat faster
-defaults write NSGlobalDomain KeyRepeat -int 0
-
+# 120, 90, 60, 30, 12, 6, 2
+defaults write -g InitialKeyRepeat -int 2
+# 120, 94, 68, 35, 25, 15
+defaults write NSGlobalDomain KeyRepeat -int 15
 
 ###############################################################################
 # Finder                                                                      #
