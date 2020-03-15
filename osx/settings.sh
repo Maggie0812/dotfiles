@@ -116,6 +116,7 @@ defaults write com.apple.menuextra.battery ShowTime -string "YES"
 ###############################################################################
 # Rectangle                                                                   #
 ###############################################################################
+# FIXME: Don't know how to authorize yet
 
 
 

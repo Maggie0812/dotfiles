@@ -16,6 +16,7 @@
     ~/.zshrc: zsh/.zshrc
     ~/.hyper.js: hyper/.hyper.js
     ~/.gitconfig: git/.gitconfig
+    ~/bin: bin
 
 - create:
   - ~/Inbox
