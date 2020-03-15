@@ -9,5 +9,9 @@ tap 'homebrew/cask-fonts'
 cask 'font-hack-nerd-font'
 
 brew 'autojump'
+
+# Fuzzy search
 brew 'fzf'
+
+# Git log enhancement
 brew 'tig'
