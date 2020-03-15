@@ -32,7 +32,6 @@
 
 - link:
     zsh/ohmyzsh/custom/themes/powerlevel10k: zsh/powerlevel10k
-    ~/.vscode: .vscode
 
 # For first time installation
 # - shell:
