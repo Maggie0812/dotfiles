@@ -4,6 +4,9 @@ cask 'hyper'
 cask 'visual-studio-code'
 cask 'rectangle'
 
+# Cooperation
+cask 'slack'
+
 # Fonts
 tap 'homebrew/cask-fonts'
 cask 'font-hack-nerd-font'
@@ -15,3 +18,4 @@ brew 'fzf'
 
 # Git log enhancement
 brew 'tig'
+
