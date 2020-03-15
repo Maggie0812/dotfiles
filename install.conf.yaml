@@ -11,8 +11,7 @@
 
 - link:
     ~/.dotfiles: ''
-    ~/.oh-my-zsh: zsh/ohmyzsh
-    ~/.oh-my-zsh/custom/themes/powerlevel10k: zsh/powerlevel10k
+    zsh/ohmyzsh/custom/themes/powerlevel10k: zsh/powerlevel10k
     ~/.zshrc: zsh/.zshrc
     ~/.hyper.js: hyper/.hyper.js
     ~/.gitconfig: git/.gitconfig
@@ -26,7 +25,7 @@
   - ~/Notes
 
 - shell:
-  - 
+  -
     command: git submodule update --init --recursive
     description: "Installing submodules"
   -
