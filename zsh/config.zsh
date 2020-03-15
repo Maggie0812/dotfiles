@@ -14,3 +14,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # FZF
 [ -f $ZDOTDIR/.fzf.zsh ] && source $ZDOTDIR/.fzf.zsh
+
+# RVM
+# Load RVM into a shell session *as a function*
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"

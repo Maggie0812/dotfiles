@@ -27,7 +27,7 @@
   - ~/Notes
 
 - shell:
-  - [./before_installation.sh, "Installing Prerequisite"]
+  - [brew/install.sh, "Installing Brew"]
   - [brew bundle, "Installing Apps"]
 
 - link:
@@ -36,4 +36,4 @@
 - shell:
   - [open ~/Applications/Rectangle.app, "Open Rectangle for authorization"]
   - [osx/settings.sh, "Setup OSX defaults"]
-
+  - [rvm/install.sh, "Installing RVM"]
