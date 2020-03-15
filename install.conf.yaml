@@ -36,5 +36,5 @@
 - shell:
   - [open ~/Applications/Rectangle.app, "Open Rectangle for authorization"]
   - [osx/settings.sh, "Setup OSX defaults"]
-  - [rvm/install.sh, "Installing RVM"]
-  - [nvm/install.sh, "Installing NVM"]
+  # - [rvm/install.sh, "Installing RVM"]
+  # - [nvm/install.sh, "Installing NVM"]
