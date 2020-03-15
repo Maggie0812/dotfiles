@@ -6,6 +6,7 @@ cask 'rectangle'
 
 # Cooperation
 cask 'slack'
+cask 'sequel-pro'
 
 # Fonts
 tap 'homebrew/cask-fonts'
