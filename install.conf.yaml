@@ -12,8 +12,8 @@
 - link:
     ~/.dotfiles: ''
     ~/.oh-my-zsh: zsh/ohmyzsh
+    ~/.oh-my-zsh/custom/themes/powerlevel10k: zsh/powerlevel10k
     ~/.zshrc: zsh/.zshrc
-    ~/.zsh/pure: zsh/pure
     ~/.hyper.js: hyper/.hyper.js
     ~/.gitconfig: git/.gitconfig
 
