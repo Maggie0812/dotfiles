@@ -17,7 +17,6 @@
     ~/.zshrc: zsh/.zshrc
     ~/.hyper.js: hyper/.hyper.js
     ~/.gitconfig: git/.gitconfig
-    ~/bin: bin
 
 - create:
   - ~/Inbox
@@ -37,3 +36,4 @@
   - [open ~/Applications/Rectangle.app, "Open Rectangle for authorization"]
   - [osx/settings.sh, "Setup OSX defaults"]
   - [rvm/install.sh, "Installing RVM"]
+  - [nvm/install.sh, "Installing NVM"]
