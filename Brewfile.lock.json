@@ -36,6 +36,15 @@
             "appdir": "~/Applications"
           }
         }
+      },
+      "font-hack-nerd-font": {
+        "version": "2.0.0",
+        "options": {
+          "full_name": "font-hack-nerd-font",
+          "args": {
+            "appdir": "~/Applications"
+          }
+        }
       }
     },
     "brew": {
@@ -105,6 +114,11 @@
             }
           }
         }
+      }
+    },
+    "tap": {
+      "homebrew/cask-fonts": {
+        "revision": "8a876fb1228023f2bc95e783567e3adf264367b1"
       }
     }
   },
