@@ -65,7 +65,7 @@ defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int
 
 # Keyboard: key repeat faster
 # 120, 90, 60, 30, 12, 6, 2
-defaults write -g InitialKeyRepeat -int 2
+defaults write -g InitialKeyRepeat -int 6
 # 120, 94, 68, 35, 25, 15
 defaults write NSGlobalDomain KeyRepeat -int 15
 
