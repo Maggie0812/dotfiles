@@ -122,6 +122,14 @@ defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.dotfile
 # Buggy
 # defaults write com.googlecode.iterm2.plist NoSyncNeverRemindPrefsChangesLostForFile_selection -bool false
 
+
+###############################################################################
+# Rectangle                                                                   #
+###############################################################################
+# Use Magnet preset of shortcuts
+defaults write com.knollsoft.Rectangle alternateDefaultShortcuts -bool true
+
+
 ###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
