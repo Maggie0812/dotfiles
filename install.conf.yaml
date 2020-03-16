@@ -37,7 +37,7 @@
 
 # For first time installation
 # - shell:
-  # - [open ~/Applications/Rectangle.app, "Open Rectangle for authorization"]
   # - [osx/settings.sh, "Setup OSX defaults"]
+  # - [open ~/Applications/Rectangle.app, "Open Rectangle for authorization"]
   # - [rvm/install.sh, "Installing RVM"]
   # - [nvm/install.sh, "Installing NVM"]
