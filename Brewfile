@@ -1,6 +1,7 @@
 cask_args appdir: '~/Applications'
 cask 'google-chrome'
 cask 'hyper'
+cask 'iterm2'
 cask 'visual-studio-code'
 cask 'rectangle'
 
