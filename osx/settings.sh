@@ -115,11 +115,12 @@ defaults write com.apple.menuextra.battery ShowTime -string "YES"
 ###############################################################################
 # iTerm2                                                                      #
 ###############################################################################
-# Specify the preferences directory
+
+# Tell iTerm2 to use the custom preferences in the directory
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.dotfiles/iterm2"
-# Tell iTerm2 to use the custom preferences in the directory
-
+# Buggy
+# defaults write com.googlecode.iterm2.plist NoSyncNeverRemindPrefsChangesLostForFile_selection -bool false
 
 ###############################################################################
 # Kill affected applications                                                  #
