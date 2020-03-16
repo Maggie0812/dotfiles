@@ -12,7 +12,8 @@ colorscheme gruvbox
 set background=dark
 
 " Display extra whitespace
-set list listchars=eol:¬,tab:▸\ ,trail:.,
+set showbreak=↪\
+set list listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨
 set nojoinspaces
 " Softtabs, 2 spaces
 " https://segmentfault.com/a/1190000000446738
