@@ -4,7 +4,7 @@ cask 'iterm2'
 cask 'visual-studio-code'
 cask 'rectangle'
 
-# Cooperation
+# Productivity
 cask 'slack'
 cask 'sequel-pro'
 
