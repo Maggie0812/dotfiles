@@ -101,6 +101,88 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string></string>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>E35DAB65-BB97-42E6-80FA-BBEF3E5B019A</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>tr</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>1</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading...</string>
+				<key>script</key>
+				<string>###########################################################
+# CONFIGURATION
+
+# Enable this translation set?
+ENABLE=true
+# Set the source language
+SOURCE_LANGUAGE="en"
+# Set the destination language
+DESTINATION_LANGUAGE="zh-TW"
+
+# END OF CONFIGURATION
+###########################################################
+
+if $ENABLE; then
+  ./run-node ./translate.js "$SOURCE_LANGUAGE" "$DESTINATION_LANGUAGE" "{query}"
+fi
+</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Google Translate</string>
+				<key>title</key>
+				<string>English -&gt; Chinese</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>625AC6BA-6A7A-48DC-B19A-6A5C0D164CB3</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -118,23 +200,6 @@
 			<string>D0C0D478-AE60-4F38-B065-A598E246E574</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<true/>
-				<key>clipboardtext</key>
-				<string></string>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>E35DAB65-BB97-42E6-80FA-BBEF3E5B019A</string>
-			<key>version</key>
-			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -197,7 +262,7 @@ ENABLE=true
 # Set the source language
 SOURCE_LANGUAGE="auto"
 # Set the destination language
-DESTINATION_LANGUAGE="zh-TW"
+DESTINATION_LANGUAGE="env"
 
 # END OF CONFIGURATION
 ###########################################################
@@ -213,72 +278,7 @@ fi
 				<key>subtext</key>
 				<string>Google Translate</string>
 				<key>title</key>
-				<string>Translate to English</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>625AC6BA-6A7A-48DC-B19A-6A5C0D164CB3</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<false/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>tr</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>1</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Loading...</string>
-				<key>script</key>
-				<string>###########################################################
-# CONFIGURATION
-
-# Enable this translation set?
-ENABLE=true
-# Set the source language
-SOURCE_LANGUAGE="auto"
-# Set the destination language
-DESTINATION_LANGUAGE="en"
-
-# END OF CONFIGURATION
-###########################################################
-
-if $ENABLE; then
-  ./run-node ./translate.js "$SOURCE_LANGUAGE" "$DESTINATION_LANGUAGE" "{query}"
-fi
-</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Google Translate</string>
-				<key>title</key>
-				<string>翻譯成中文</string>
+				<string>Automatic -&gt; English</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -319,11 +319,11 @@ https://github.com/zetavg/alfred-google-translate-workflow</string>
 		<key>3F5942C7-41D0-45B1-8B8D-835217EEF956</key>
 		<dict>
 			<key>note</key>
-			<string>3rd Translation Set</string>
+			<string>2nd Translation Set</string>
 			<key>xpos</key>
-			<integer>120</integer>
+			<integer>140</integer>
 			<key>ypos</key>
-			<integer>320</integer>
+			<integer>195</integer>
 		</dict>
 		<key>4DA91BE3-46C0-4CC4-B20D-0A95540D0333</key>
 		<dict>
@@ -337,11 +337,11 @@ https://github.com/zetavg/alfred-google-translate-workflow</string>
 		<key>625AC6BA-6A7A-48DC-B19A-6A5C0D164CB3</key>
 		<dict>
 			<key>note</key>
-			<string>2nd Translation Set</string>
+			<string>1st Translation Set</string>
 			<key>xpos</key>
-			<integer>120</integer>
+			<integer>140</integer>
 			<key>ypos</key>
-			<integer>180</integer>
+			<integer>40</integer>
 		</dict>
 		<key>798E8B3B-CD22-4D5D-9D0C-B3B240E13037</key>
 		<dict>
