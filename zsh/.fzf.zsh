@@ -13,3 +13,6 @@ fi
 # Key bindings
 # ------------
 source "/$FZF_PATH/shell/key-bindings.zsh"
+
+# Configs
+export FZF_DEFAULT_OPTS='--height 40% --reverse --border --inline-info'
