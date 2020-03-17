@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>customSites</key>
+	<dict>
+		<key>B56DEDD0-75A0-4BF3-819E-36C0918435C1</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>xfff</string>
+			<key>text</key>
+			<string>Find file in Xfers repo</string>
+			<key>url</key>
+			<string>https://github.com/Xfers/Xfers/find/develop</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>B581BF88-8967-44D0-B430-9810B300E480</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>xfrv</string>
+			<key>text</key>
+			<string>PRs awaiting for review</string>
+			<key>url</key>
+			<string>https://github.com/Xfers/Xfers/pulls/review-requested/@me</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>F2545C40-AC95-44CD-A905-3839E93E9FD0</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>xfpr</string>
+			<key>text</key>
+			<string>PRs of mine</string>
+			<key>url</key>
+			<string>https://github.com/Xfers/Xfers/pulls/@me</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>onlyShowEnabledInPrefs</key>
+	<true/>
+</dict>
+</plist>
