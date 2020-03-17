@@ -29,6 +29,9 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 # Stop Photos from opening automatically when connecting to iPhone
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
+# Allow unidentified apps
+# https://www.techjunkie.com/gatekeeper-macos-sierra/
+sudo spctl --master-disable
 
 ###############################################################################
 # Dock                                                                        #
