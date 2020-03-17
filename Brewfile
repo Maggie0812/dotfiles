@@ -7,6 +7,7 @@ cask 'rectangle'
 # Productivity
 cask 'slack'
 cask 'sequel-pro'
+cask 'appcleaner'
 
 # Fonts
 tap 'homebrew/cask-fonts'
