@@ -13,6 +13,8 @@ plugins=(
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # ohmyzsh settings
+DISABLE_UPDATE_PROMPT=true # Auto update
+# DISABLE_AUTO_UPDATE=true # Never update
 [ -f $ZDOTDIR/ohmyzsh/oh-my-zsh.sh ] && source $ZDOTDIR/ohmyzsh/oh-my-zsh.sh
 
 # p10k settings
