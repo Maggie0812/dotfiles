@@ -8,18 +8,11 @@
 
     "git.detectSubmodules": false,
 
-    "powermode.enabled": true,
-    "powermode.explosionSize": 10,
-    "powermode.shakeIntensity": 1,
-
     "files.autoSave": "onWindowChange",
     "files.trimTrailingWhitespace": true,
     "files.trimFinalNewlines": true,
 
-    "projectManager.git.baseFolders": [
-        "$home/Projects",
-        "$home/dotfiles"
-    ],
+
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "workbench.iconTheme": "vscode-icons",
@@ -32,13 +25,14 @@
         ".env": "shellscript",
     },
     "vsicons.dontShowNewVersionMessage": true,
-    "[ruby]": {
-        "editor.defaultFormatter": "misogi.ruby-rubocop",
-    },
-    "ruby.intellisense": "rubyLocate",
     "ruby.codeCompletion": "rcodetools",
-    "[typescript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
+    "ruby.format": "rubocop",
+    "ruby.intellisense": "rubyLocate",
+		"[ruby]": {
+        "editor.defaultFormatter": "rebornix.ruby"
+    },
+    "ruby.lint": {
+        "rubocop": true
     },
     "javascript.updateImportsOnFileMove.enabled": "always",
     "typescript.updateImportsOnFileMove.enabled": "always",
@@ -50,6 +44,8 @@
     "[sql]": {
         "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
     },
-    "window.zoomLevel": 1,
+    "[javascript]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
     // "ruby.rubocop.executePath": "/usr/local/bin/rubocop-daemon-wrapper/"
 }
