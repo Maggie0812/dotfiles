@@ -21,7 +21,7 @@
 
 # Install Brew
 - shell:
-  - [brew/install.sh, "Installing Brew"]
+  # - [brew/install.sh, "Installing Brew"]
   - [rvm/install.sh, "Installing RVM"]
   - [nvm/install.sh, "Installing NVM"]
 
@@ -50,5 +50,5 @@
   - [vscode/install_extensions.sh, "Install VS Code extensions"]
 
 # Install OSX settings
-# - shell:
-#   - [osx/settings.sh, "Setup OSX defaults"]
+- shell:
+  - [osx/settings.sh, "Setup OSX defaults"]
