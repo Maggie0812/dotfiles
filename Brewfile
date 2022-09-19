@@ -8,6 +8,7 @@ cask 'appcleaner' # App Uninstaller
 cask 'gifcapture' # Screenshot Gif
 cask 'the-unarchiver'
 # cask 'pock' # Optional: Touchbar customization
+cask 'mtmr' # Optional: Touchbar customization
 
 # Fonts
 tap 'homebrew/cask-fonts'
@@ -18,4 +19,3 @@ brew 'autojump'
 brew 'fzf'
 brew 'tig'
 brew 'gnupg'
-

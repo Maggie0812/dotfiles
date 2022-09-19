@@ -180,6 +180,15 @@
             "appdir": "~/Applications"
           }
         }
+      },
+      "mtmr": {
+        "version": "0.27.0",
+        "options": {
+          "full_name": "mtmr",
+          "args": {
+            "appdir": "~/Applications"
+          }
+        }
       }
     },
     "brew": {
@@ -338,7 +347,7 @@
       "monterey": {
         "HOMEBREW_VERSION": "3.6.2",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "42b684dded640060a2990e25a0eff0c08edd174a",
+        "Homebrew/homebrew-core": "1f6aeb12ee98a7ea3de72318b200c3e6f3a2faa6",
         "CLT": "14.0.0.0.1.1661618636",
         "Xcode": "14.0",
         "macOS": "12.6"

@@ -3,7 +3,6 @@ plugins=(
   extract
   brew
   autojump
-  zsh-prompt-benchmark
 )
 
 # Set name of the theme to load --- if set to "random", it will
