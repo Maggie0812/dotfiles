@@ -49,6 +49,13 @@
 - shell:
   - [vscode/install_extensions.sh, "Install VS Code extensions"]
 
+# Install MTMR config
+- link:
+    "~/Library/Application Support/MTMR/items.json":
+      glob: true
+      force: true
+      path: mtmr/items.json
+
 # Install OSX settings
-- shell:
-  - [osx/settings.sh, "Setup OSX defaults"]
+# - shell:
+#   - [osx/settings.sh, "Setup OSX defaults"]

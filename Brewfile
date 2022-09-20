@@ -6,9 +6,11 @@ cask 'docker'
 # Productivity
 cask 'appcleaner' # App Uninstaller
 cask 'gifcapture' # Screenshot Gif
+cask 'rectangle' # window snapping
 cask 'the-unarchiver'
 # cask 'pock' # Optional: Touchbar customization
 cask 'mtmr' # Optional: Touchbar customization
+
 
 # Fonts
 tap 'homebrew/cask-fonts'

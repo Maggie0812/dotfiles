@@ -38,7 +38,7 @@
         }
       },
       "rectangle": {
-        "version": "0.22",
+        "version": "0.59,65",
         "options": {
           "full_name": "rectangle",
           "args": {
@@ -330,7 +330,7 @@
     },
     "tap": {
       "homebrew/cask-fonts": {
-        "revision": "fcdfdd253507d3b129d185546cee90c1d1f227c8"
+        "revision": "8fef229ebe25d19ce0d3fca85d939c9df7aaf291"
       }
     }
   },
@@ -347,7 +347,7 @@
       "monterey": {
         "HOMEBREW_VERSION": "3.6.2",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "1f6aeb12ee98a7ea3de72318b200c3e6f3a2faa6",
+        "Homebrew/homebrew-core": "1a0fc22bf98b372d71a8a137d285f5764375a547",
         "CLT": "14.0.0.0.1.1661618636",
         "Xcode": "14.0",
         "macOS": "12.6"
