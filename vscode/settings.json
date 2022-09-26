@@ -23,10 +23,9 @@
         ".env": "shellscript",
     },
     "ruby.codeCompletion": "rcodetools",
-    "ruby.format": "rubocop",
     "ruby.intellisense": "rubyLocate",
     "[ruby]": {
-        "editor.defaultFormatter": "rebornix.ruby"
+        "editor.defaultFormatter": "misogi.ruby-rubocop"
     },
     "ruby.lint": {
         "rubocop": {
@@ -44,4 +43,5 @@
     "security.workspace.trust.untrustedFiles": "open",
     "powermode.enabled": true,
     "powermode.shake.intensity": 1,
+    "ruby.format": "rubocop",
 }
