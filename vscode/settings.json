@@ -15,37 +15,33 @@
 
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
-    "workbench.iconTheme": "vscode-icons",
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
-    "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWw7dW1sXCIsXCJjdXN0b21MaWJyYXJpZXNcIjpbXCJMLnNjcmF0Y2hwYWRcIl0sXCJwbHVnaW5zXCI6W10sXCJyZWNlbnRDb2xvcnNcIjpbXCIwMDAwMDBcIl0sXCJmb3JtYXRXaWR0aFwiOjI0MCxcImNyZWF0ZVRhcmdldFwiOmZhbHNlLFwicGFnZUZvcm1hdFwiOntcInhcIjowLFwieVwiOjAsXCJ3aWR0aFwiOjgyNyxcImhlaWdodFwiOjExNjl9LFwic2VhcmNoXCI6dHJ1ZSxcInNob3dTdGFydFNjcmVlblwiOnRydWUsXCJncmlkQ29sb3JcIjpcIiNkMGQwZDBcIixcImRhcmtHcmlkQ29sb3JcIjpcIiM2ZTZlNmVcIixcImF1dG9zYXZlXCI6dHJ1ZSxcInJlc2l6ZUltYWdlc1wiOm51bGwsXCJvcGVuQ291bnRlclwiOjAsXCJ2ZXJzaW9uXCI6MTgsXCJ1bml0XCI6MSxcImlzUnVsZXJPblwiOmZhbHNlLFwidWlcIjpcIlwifSJ9",
     "workbench.colorTheme": "Gruvbox Dark (Hard)",
     "files.associations": {
         ".env": "shellscript",
     },
-    "vsicons.dontShowNewVersionMessage": true,
     "ruby.codeCompletion": "rcodetools",
     "ruby.format": "rubocop",
     "ruby.intellisense": "rubyLocate",
-		"[ruby]": {
+    "[ruby]": {
         "editor.defaultFormatter": "rebornix.ruby"
     },
     "ruby.lint": {
-        "rubocop": true
+        "rubocop": {
+            "useBundler": true,
+            "forceExclusion": true
+        }
     },
     "javascript.updateImportsOnFileMove.enabled": "always",
     "typescript.updateImportsOnFileMove.enabled": "always",
     "extensions.autoUpdate": false,
     "debug.javascript.autoAttachFilter": "disabled",
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
     "[sql]": {
         "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
     },
-    "[javascript]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
-    },
-    // "ruby.rubocop.executePath": "/usr/local/bin/rubocop-daemon-wrapper/"
+    "security.workspace.trust.untrustedFiles": "open",
+    "powermode.enabled": true,
+    "powermode.shake.intensity": 1,
 }

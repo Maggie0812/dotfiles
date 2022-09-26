@@ -1695,7 +1695,7 @@
 			<key>HotKey Alternate Shortcuts</key>
 			<array/>
 			<key>HotKey Characters</key>
-			<string>`</string>
+			<string></string>
 			<key>HotKey Characters Ignoring Modifiers</key>
 			<string>`</string>
 			<key>HotKey Key Code</key>
@@ -1703,7 +1703,7 @@
 			<key>HotKey Modifier Activation</key>
 			<integer>0</integer>
 			<key>HotKey Modifier Flags</key>
-			<integer>1048576</integer>
+			<integer>524288</integer>
 			<key>HotKey Window Animates</key>
 			<true/>
 			<key>HotKey Window AutoHides</key>
@@ -2234,7 +2234,7 @@
 			<key>Silence Bell</key>
 			<false/>
 			<key>Space</key>
-			<integer>0</integer>
+			<integer>-1</integer>
 			<key>Sync Title</key>
 			<false/>
 			<key>Tab Color</key>

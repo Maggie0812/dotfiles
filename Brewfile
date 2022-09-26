@@ -8,6 +8,7 @@ cask 'appcleaner' # App Uninstaller
 cask 'gifcapture' # Screenshot Gif
 cask 'rectangle' # window snapping
 cask 'the-unarchiver'
+brew 'translate-shell' # Translation
 # cask 'pock' # Optional: Touchbar customization
 cask 'mtmr' # Optional: Touchbar customization
 

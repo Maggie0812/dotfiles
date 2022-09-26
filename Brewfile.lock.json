@@ -326,11 +326,25 @@
       "nvm": {
         "version": "0.35.3",
         "bottle": false
+      },
+      "translate-shell": {
+        "version": "0.9.7",
+        "bottle": {
+          "rebuild": 0,
+          "root_url": "https://ghcr.io/v2/homebrew/core",
+          "files": {
+            "all": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/translate-shell/blobs/sha256:9ffbfa24a9eb1bb089abe076cf7ae261d9f907f691c6aba360ea528ae00ab3cc",
+              "sha256": "9ffbfa24a9eb1bb089abe076cf7ae261d9f907f691c6aba360ea528ae00ab3cc"
+            }
+          }
+        }
       }
     },
     "tap": {
       "homebrew/cask-fonts": {
-        "revision": "8fef229ebe25d19ce0d3fca85d939c9df7aaf291"
+        "revision": "8683b9b9bd619a79e51916062fc9b362ef16604e"
       }
     }
   },
@@ -347,7 +361,7 @@
       "monterey": {
         "HOMEBREW_VERSION": "3.6.2",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "1a0fc22bf98b372d71a8a137d285f5764375a547",
+        "Homebrew/homebrew-core": "142c8abc1f32543b58cc9e916e4fae854ca68aed",
         "CLT": "14.0.0.0.1.1661618636",
         "Xcode": "14.0",
         "macOS": "12.6"
