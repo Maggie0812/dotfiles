@@ -20,10 +20,10 @@
   - [git submodule update --init --recursive, "Installing submodules"]
 
 # Install Brew
-- shell:
-  # - [brew/install.sh, "Installing Brew"]
-  - [rvm/install.sh, "Installing RVM"]
-  - [nvm/install.sh, "Installing NVM"]
+# - shell:
+#   # - [brew/install.sh, "Installing Brew"]
+#   - [rvm/install.sh, "Installing RVM"]
+#   - [nvm/install.sh, "Installing NVM"]
 
 # shell dotfiles
 - clean: ['~']
@@ -37,24 +37,24 @@
     zsh/ohmyzsh/custom/themes/powerlevel10k: zsh/powerlevel10k
 
 # Install Apps
-- shell:
-  - [brew bundle, "Installing Apps"]
+# - shell:
+#   - [brew bundle, "Installing Apps"]
 
 # Install VS Code config
-- link:
-    "~/Library/Application Support/Code/User/":
-      glob: true
-      force: true
-      path: vscode/*
-- shell:
-  - [vscode/install_extensions.sh, "Install VS Code extensions"]
+# - link:
+#     "~/Library/Application Support/Code/User/":
+#       glob: true
+#       force: true
+#       path: vscode/*
+# - shell:
+#   - [vscode/install_extensions.sh, "Install VS Code extensions"]
 
 # Install MTMR config
-- link:
-    "~/Library/Application Support/MTMR/items.json":
-      glob: true
-      force: true
-      path: mtmr/items.json
+# - link:
+#     "~/Library/Application Support/MTMR/items.json":
+#       glob: true
+#       force: true
+#       path: mtmr/items.json
 
 # Install OSX settings
 # - shell:
